@@ -1,7 +1,7 @@
-# GDMVC
+# GIMVC
 This is the source code of the paper "Graph-Guided Imputation-Free Incomplete Multi-View Clustering". The paper has been accepted by the journal Expert Systems With Applications.
 
-The GDMVC algorithm described in the paper is implemented using the Python language and the PyTorch framework. The algorithm needs to use a GPU when training the model, and if you want to train on the CPU, you need to modify the code.
+The GIMVC algorithm described in the paper is implemented using the Python language and the PyTorch framework. The algorithm needs to use a GPU when training the model, and if you want to train on the CPU, you need to modify the code.
 
 The dataset directory contains the datasets used. To prevent the compression file from becoming too large, only a portion of the datasets has been uploaded. The code directory contains the code that implements the algorithm. In the construct_w directory is the similarity matrix corresponding to the dataset.
 

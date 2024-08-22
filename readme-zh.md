@@ -1,4 +1,4 @@
-# GDMVC
+# GIMVC
 这是论文“Graph-Guided Imputation-Free Incomplete Multi-View Clustering”的源代码。论文已经被Expert Systems With Applications期刊接收。
 
 论文中的GIMVC算法采用python语言和pytorch框架实现。该算法在训练模型时需要用到显卡，如果想在CPU上进行训练，则需要修改代码。
