@@ -1,0 +1,63 @@
+2024-08-22 11:02:15,850 [train_duibi.py:31] INFO: duibi progress: miss_ratio_list[1/1], dataset_list[1/1]
+2024-08-22 11:02:15,850 [common_util.py:7] INFO: set gpu_id: 0
+2024-08-22 11:02:15,850 [common_util.py:10] INFO: set random seed: 1234
+2024-08-22 11:02:15,851 [common_util.py:18] INFO: train start: train_func: train_duibi, dataset: 100leaves, miss_ratio: 0.5, args: {'k': 5, 'lam': 100, 'h_dim': 50, 'epochs': 1000, 'lr': 0.001, 'k_find': 20, 'print_loss_freq': 50, 'construct_w_way': 'sklearn'}
+2024-08-22 11:02:15,851 [train_base.py:42] INFO: dataset: 100leaves, miss_ratio: 0.5, args: {'k': 5, 'lam': 100, 'h_dim': 50, 'epochs': 1000, 'lr': 0.001, 'k_find': 20, 'print_loss_freq': 50, 'construct_w_way': 'sklearn'}
+2024-08-22 11:02:15,851 [train_base.py:44] INFO: load complete dataset
+2024-08-22 11:02:15,888 [data_process.py:48] INFO: dataset: 100leaves, n_cluster: 100, n_sample: 1600, n_view: 3, dims: [64, 64, 64]
+2024-08-22 11:02:15,888 [train_base.py:47] INFO: build incomplete dataset
+2024-08-22 11:02:15,915 [data_process.py:112] INFO: mask.shape: (1600, 3)
+2024-08-22 11:02:15,915 [train_base.py:51] INFO: train without imputation
+2024-08-22 11:02:15,916 [train_base.py:53] INFO: construct graph
+2024-08-22 11:02:15,933 [construct_w_helper.py:18] INFO: w_mat_file exists: False, w_mat_file: /data/baishunshun/no_complete_cluster/GIMVC/construct_w/w_ds_100leaves_mr_0.5_view_0_way_sklearn.mat
+2024-08-22 11:02:15,933 [train_base.py:70] INFO: w not exists, construct w
+2024-08-22 11:02:15,933 [certain_util.py:233] INFO: constructW_by_sklearn
+2024-08-22 11:02:16,324 [construct_w_helper.py:33] INFO: save w_mat_file success: /data/baishunshun/no_complete_cluster/GIMVC/construct_w/w_ds_100leaves_mr_0.5_view_0_way_sklearn.mat
+2024-08-22 11:02:16,324 [train_base.py:73] INFO: construct graph: view 1 finish
+2024-08-22 11:02:16,543 [construct_w_helper.py:18] INFO: w_mat_file exists: False, w_mat_file: /data/baishunshun/no_complete_cluster/GIMVC/construct_w/w_ds_100leaves_mr_0.5_view_1_way_sklearn.mat
+2024-08-22 11:02:16,543 [train_base.py:70] INFO: w not exists, construct w
+2024-08-22 11:02:16,543 [certain_util.py:233] INFO: constructW_by_sklearn
+2024-08-22 11:02:16,694 [construct_w_helper.py:33] INFO: save w_mat_file success: /data/baishunshun/no_complete_cluster/GIMVC/construct_w/w_ds_100leaves_mr_0.5_view_1_way_sklearn.mat
+2024-08-22 11:02:16,695 [train_base.py:73] INFO: construct graph: view 2 finish
+2024-08-22 11:02:16,787 [construct_w_helper.py:18] INFO: w_mat_file exists: False, w_mat_file: /data/baishunshun/no_complete_cluster/GIMVC/construct_w/w_ds_100leaves_mr_0.5_view_2_way_sklearn.mat
+2024-08-22 11:02:16,787 [train_base.py:70] INFO: w not exists, construct w
+2024-08-22 11:02:16,787 [certain_util.py:233] INFO: constructW_by_sklearn
+2024-08-22 11:02:16,955 [construct_w_helper.py:33] INFO: save w_mat_file success: /data/baishunshun/no_complete_cluster/GIMVC/construct_w/w_ds_100leaves_mr_0.5_view_2_way_sklearn.mat
+2024-08-22 11:02:16,956 [train_base.py:73] INFO: construct graph: view 3 finish
+2024-08-22 11:02:17,096 [train_base.py:80] INFO: prepare train: change data to tensor, build model and optimizer
+2024-08-22 11:02:18,551 [train_base.py:91] INFO: start train
+2024-08-22 11:02:20,485 [train_base.py:122] INFO: Epoch[50/1000] L: 111.6726 Lre: 107.1405 Ltr: 0.0453
+2024-08-22 11:02:21,085 [train_base.py:122] INFO: Epoch[100/1000] L: 72.4915 Lre: 68.1671 Ltr: 0.0432
+2024-08-22 11:02:21,671 [train_base.py:122] INFO: Epoch[150/1000] L: 57.2034 Lre: 53.6940 Ltr: 0.0351
+2024-08-22 11:02:22,300 [train_base.py:122] INFO: Epoch[200/1000] L: 47.0511 Lre: 43.8045 Ltr: 0.0325
+2024-08-22 11:02:22,897 [train_base.py:122] INFO: Epoch[250/1000] L: 39.9304 Lre: 37.0738 Ltr: 0.0286
+2024-08-22 11:02:23,518 [train_base.py:122] INFO: Epoch[300/1000] L: 34.1158 Lre: 31.6592 Ltr: 0.0246
+2024-08-22 11:02:24,101 [train_base.py:122] INFO: Epoch[350/1000] L: 30.8794 Lre: 28.8501 Ltr: 0.0203
+2024-08-22 11:02:24,684 [train_base.py:122] INFO: Epoch[400/1000] L: 28.3204 Lre: 26.4161 Ltr: 0.0190
+2024-08-22 11:02:25,277 [train_base.py:122] INFO: Epoch[450/1000] L: 26.5034 Lre: 24.7101 Ltr: 0.0179
+2024-08-22 11:02:25,868 [train_base.py:122] INFO: Epoch[500/1000] L: 24.9573 Lre: 23.2938 Ltr: 0.0166
+2024-08-22 11:02:26,466 [train_base.py:122] INFO: Epoch[550/1000] L: 22.8390 Lre: 21.3199 Ltr: 0.0152
+2024-08-22 11:02:27,047 [train_base.py:122] INFO: Epoch[600/1000] L: 23.3261 Lre: 21.9083 Ltr: 0.0142
+2024-08-22 11:02:27,624 [train_base.py:122] INFO: Epoch[650/1000] L: 20.5422 Lre: 19.2009 Ltr: 0.0134
+2024-08-22 11:02:28,204 [train_base.py:122] INFO: Epoch[700/1000] L: 19.5239 Lre: 18.2501 Ltr: 0.0127
+2024-08-22 11:02:28,781 [train_base.py:122] INFO: Epoch[750/1000] L: 18.6953 Lre: 17.5363 Ltr: 0.0116
+2024-08-22 11:02:29,361 [train_base.py:122] INFO: Epoch[800/1000] L: 18.2313 Lre: 17.1452 Ltr: 0.0109
+2024-08-22 11:02:29,967 [train_base.py:122] INFO: Epoch[850/1000] L: 17.8209 Lre: 16.7409 Ltr: 0.0108
+2024-08-22 11:02:30,576 [train_base.py:122] INFO: Epoch[900/1000] L: 17.7247 Lre: 16.7372 Ltr: 0.0099
+2024-08-22 11:02:31,197 [train_base.py:122] INFO: Epoch[950/1000] L: 17.0846 Lre: 16.1663 Ltr: 0.0092
+2024-08-22 11:02:31,798 [train_base.py:122] INFO: Epoch[1000/1000] L: 17.3019 Lre: 16.4377 Ltr: 0.0086
+2024-08-22 11:02:33,288 [metrics.py:130] INFO: kmeans ACC=67.06, NMI=83.21, Fscore=62.57
+2024-08-22 11:02:35,054 [metrics.py:130] INFO: kmeans ACC=65.31, NMI=82.75, Fscore=61.41
+2024-08-22 11:02:36,343 [metrics.py:130] INFO: kmeans ACC=66.94, NMI=83.4, Fscore=62.87
+2024-08-22 11:02:38,283 [metrics.py:130] INFO: kmeans ACC=66.38, NMI=83.35, Fscore=62.67
+2024-08-22 11:02:40,336 [metrics.py:130] INFO: kmeans ACC=69.38, NMI=83.77, Fscore=63.64
+2024-08-22 11:02:42,492 [metrics.py:130] INFO: kmeans ACC=66.12, NMI=82.54, Fscore=61.21
+2024-08-22 11:02:44,539 [metrics.py:130] INFO: kmeans ACC=70.0, NMI=84.5, Fscore=65.21
+2024-08-22 11:02:46,637 [metrics.py:130] INFO: kmeans ACC=66.38, NMI=82.5, Fscore=62.11
+2024-08-22 11:02:48,669 [metrics.py:130] INFO: kmeans ACC=67.94, NMI=84.04, Fscore=63.78
+2024-08-22 11:02:50,663 [metrics.py:130] INFO: kmeans ACC=66.62, NMI=82.83, Fscore=61.9
+2024-08-22 11:02:50,665 [metrics.py:135] INFO: cluster_mine Kmeans(10 times average) ACC=67.21±1.40, NMI=83.29±0.63, fscore=62.74±1.15
+2024-08-22 11:02:50,667 [common_util.py:22] INFO: train end
+2024-08-22 11:02:50,667 [common_util.py:25] INFO: Elapsed time: 34.82 seconds
+2024-08-22 11:02:50,667 [train_duibi.py:42] INFO: ['miss_ratio', 'dataset', 'results[acc(avg, std), nmi, fscore]']
+2024-08-22 11:02:50,668 [train_duibi.py:42] INFO: [0.5, '100leaves', [67.21, 1.4, 83.29, 0.63, 62.74, 1.15]]
